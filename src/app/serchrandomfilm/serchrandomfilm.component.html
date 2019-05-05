@@ -1,0 +1,48 @@
+<div class="filters">
+    <div class="filter"> 
+      <mat-select-autocomplete 
+     
+      [placeholder]="'Genre'"
+      [errorMsg]="errorMessage"
+      [showErrorMsg]="showError"
+      [options]="optionsGenreFilter"
+      [display]="'display'"
+      [value]="'value'"
+      [multiple]='true'
+      [selectedOptions]="selectedoptionsGenreFilter"
+      (selectionChange)="getSelectedoptionsGenreFilter($event)">
+      </mat-select-autocomplete>
+    </div>
+    
+    <div class="filter"> 
+      <mat-select-autocomplete 
+      
+      [placeholder]="'Director'"
+      [errorMsg]="errorMessage"
+      [showErrorMsg]="showError"
+      [options]="options"
+      [display]="'display'"
+      [value]="'value'"
+      [multiple]='true'
+      [selectedOptions]="selectedOptions"
+      (selectionChange)="getSelectedOptions($event)">
+      </mat-select-autocomplete>
+    </div>
+
+    <div class="filter"> 
+      <mat-select-autocomplete 
+     
+      [placeholder]="'Stars'"
+      [errorMsg]="errorMessage"
+      [showErrorMsg]="showError"
+      [options]="options"
+      [display]="'display'"
+      [value]="'value'"
+      [multiple]='true'
+      [selectedOptions]="selectedOptions"
+      (selectionChange)="getSelectedOptions($event)">
+      </mat-select-autocomplete>
+     </div>
+
+  </div>
+  <!--  [formControl]="GenreFilter" -->
